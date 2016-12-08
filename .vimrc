@@ -9,10 +9,14 @@ set expandtab
 set autoindent
 :set cindent
 ":set backupcopy=yes
+let g:NERDTreeWinPos="right"
+let g:NERDTreeIgnore=['^__pycache__$', '\.egg-info$', '\~$']
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
 syntax enable
 filetype plugin indent on
 au BufRead /tmp/mutt* set tw=72
 au BufRead *txt       set tw=72
+au BufRead *md        set tw=72
 au BufRead TODO       set tw=72
 
 " jump to last position in file
