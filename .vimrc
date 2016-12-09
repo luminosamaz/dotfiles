@@ -7,6 +7,8 @@ set ts=4
 set sw=4
 set expandtab
 set autoindent
+set foldmethod=indent
+set foldlevelstart=20
 :set cindent
 ":set backupcopy=yes
 let g:NERDTreeWinPos="right"
