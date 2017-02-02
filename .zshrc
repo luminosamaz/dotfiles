@@ -1,9 +1,6 @@
 # Created by newuser for 5.0.2
 bindkey -v
-# autoload -Uz promptinit
-# promptinit
-# prompt walters
-export PS1="%* %n@%m %F{green}%~%f %# "
+export PS1="%* %n@%m %B%~%b %# "
 export RPROMPT=""
 setopt dvorak
 setopt append_history
