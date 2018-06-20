@@ -1,5 +1,7 @@
 execute pathogen#infect()
-color 256_asu1dark
+" color 256_asu1dark
+" color elflord
+color 256_redblack
 set nu
 set mouse=a
 set t_Co=256
@@ -20,6 +22,10 @@ au BufRead /tmp/mutt* set tw=72
 au BufRead *txt       set tw=72
 au BufRead *md        set tw=72
 au BufRead TODO       set tw=72
+au BufRead *.sh       set tabstop=8
+au BufRead *.sh       set noexpandtab
 
 " jump to last position in file
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+nmap <C-n> <Esc>:set nu!<CR>
